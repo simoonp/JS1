@@ -1,0 +1,179 @@
+//以下为JS代码
+var i,j;
+    for(i=1;i<10;i++) {
+        for(j=1;j<=i;j++) {
+        document.write(j+'*'+i+'='+i*j+'&nbsp;');
+        }
+    document.write('<br/>');
+        }
+document.write('<br/>');
+ var i,j;
+    for(i=1;i<10;i++) {
+        for(j=1;j<=i;j++) {
+        document.write(j+'*'+i+'='+i*j+'&nbsp;');
+        }
+    document.write('<br/>');
+        }
+document.write('<br/>');
+    var a,b,c,d,e;
+
+    for (a=100;a<1000;a++)
+   {
+    	b=a/100;
+    	c=a/10-b*10;
+    	d=a%10;
+    	e=b*b*b+c*c*c+d*d*d-a;
+    	if(e==0)
+    	{
+    		document.write(a+'是水仙花数'+'&nbsp;');
+    	    document.write('<br>');
+    	}
+    }//Js中没有整型和浮点型之分，以上b,c为小数，if的判断条件不成立，无法输出
+    var a,b,c,d;
+    for(a=100;a<1000;a++)
+    	{
+        d=a%10;
+        c=(a%100-d)/10;
+        b=(a-c*10-d)/100;
+        if(b*b*b+c*c*c+d*d*d==a)
+        {
+        	document.write(a+'是水仙花数'+'<br/>');
+        }
+        }//可以编译
+    	var a=370;
+        d=a%10;
+        c=(a%100-d)/10;
+        b=(a-c*10-d)/100;
+        if(b*b*b+c*c*c+d*d*d==a)
+        {
+        	document.write(a+'是水仙花数'+'<br/>');
+        }
+        document.write(a+'<br/>'+b+'<br/>'+c+'<br/>'+d);
+var a, b, c,i;
+
+　　　　for(a=1;a<10;a++){  //提取百位
+                    for(b=0;b<10;b++){  //提取十位
+                        for(c=0;c<10;c++) { //提取个位
+                            var i = a*100+b*10+c;
+                            if (i=== a*a*a +b*b*b + c*c*c){
+                                document.write(i+'是水仙花数'+'<br/>');
+                            }
+                        }
+                    }
+                }
+
+document.write('<br/>');
+var a=321;
+a=a/100;
+document.write(a);
+document.write('<br/>');
+document.write('我要换行');
+//document.write('\n');
+//document.write('<br/>');
+//document.write('I\'m\"ok\"!');//输出引号要在前面加转义字符 \
+//alert('初次尝试');
+//document.write('<br/>');
+//document.write('[1,2,simoonp,]');//z这是一个数组
+/*var arr = [simoonp,is,me];
+document.write(arr[2]);*/
+/*var i={
+	name='司明朋';
+	age='20';
+	city='江苏';
+	}
+    i.say = function(){document.write(this.name)};*/
+//abc = 'Hello, JS';
+//alert(abc);
+var life={};
+for(life.age=1;life.age<=5;life.age++)
+{
+	switch(life.age)
+	{
+		case 1:
+		  life.body = "卵细胞" ; //增加body属性
+		  life.say = function(){alert(this.age+this.body)};//新建say方法
+		  break;
+		case 2:
+		  life.tail = "尾巴";//增加tail属性
+		  life.gill ="腮";//增加gill属性
+		  life.body = "蝌蚪";
+		  life.say = function(){alert(this.age+this.body+"-"+this.tail+"，"+this.gill)};
+		  break;
+		case 3:
+
+		                 delete life.tail;//删除ail属性
+		                 delete life.gill;//删除gill属性
+		                 life.legs = "四条腿";//增加legs属性
+		                 life.lung = "肺"; //增加lung属性
+		                 life.body = "青蛙";
+		                 life.say = function(){alert(this.age+this.body+"-"+this.legs+"，"+this.lung)};
+		                 break;
+		case 4:
+		                 delete life.tail;
+		                 delete life.gill;
+		                 delete life.legs;
+		                 delete life.lung;
+                         delete life.body;
+                         life.love = "找到挚爱";
+                         life.say = function(){alert(this.age+this.love)};
+                         break;
+        case 5:
+                         delete life.tail;
+		                 delete life.gill;
+		                 delete life.legs;
+		                 delete life.lung;
+                         delete life.body;
+                         delete life.love;
+                         life.regeneration = "变回王子";
+                         life.say = function(){alert(this.regeneration)};
+                         break;
+	};
+	life.say();//调用say方法
+}
+var myfunc = function()
+{
+	alert("hello");
+};
+alert(typeof(myfunc));
+
+var myfunc = function()
+{
+	alert("hello");
+};
+myfunc();//第一次调用myfunc,输出hello
+
+myfunc = function()
+{
+	alert("yerh");
+};
+myfunc();//第二次调用myfunc,输出yeah
+
+myfunc = function()
+{
+	alert("hello");
+};
+myfunc();//输出的还是hello和“悟透JS”上讲的不一样
+
+myfunc = function()
+{
+	alert("yerh");
+};
+myfunc();
+var a=153;
+    d=a%10;
+    c=(a%100-d)/10;
+    b=(a-c*10-d)/100;
+document.write(a+'<br/>'+b+'<br/>'+c+'<br/>'+d);
+//以下为HTML代码
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="index.js">
+	</script>
+</head>
+<body>
+<br/>
+</body>
+</html>
